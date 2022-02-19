@@ -1,0 +1,136 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-black: #000000;
+    --color-grey: #F4FCFE;
+    --color-light: #FFFFFF;
+    --fw-dark: 600;
+    --fw-darker: 700;
+    --fs-normal: 18px;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: var(--fs-normal);
+    background-color: #F4FCFE;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    background-color: var(--color-light);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.logo {
+  width: 68px;
+  height: 71px;
+  margin-right: 10px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    font-weight: var(--fw-dark);
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+}
+
+.nav__links li {
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-weight: var(--fw-dark);
+}
+
+.meet-the-team {
+    margin: 90px 0;
+}
+
+.meet-the-team__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.meet-the-team__heading h1 {
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.underline {
+    width: 86px;
+    height: 15px;
+    background-color: #1976D2;
+    margin-top: 14px;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 70px;
+    text-transform: uppercase;
+}
+
+.team-members > div {
+    flex-basis: 30%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-members img {
+    width: 217px;
+    height: 217px;
+    margin-bottom: 10px;
+}
+
+.member-name {
+    font-weight: var(--fw-darker);
+    font-size: 34px;
+}
+
+.member-role {
+    color: #CFD3D4;
+    font-style: italic;
+}
+
+.footer {
+    background-color: #0085FF;
+    color: var(--color-light);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+footer > div {
+    margin: 20px;
+}
+
+.footer h4 {
+    text-transform: capitalize;
+    margin: 0 0 10px 0;
+    font-size: 28px;
+}
+
+footer img {
+    width: 38px;
+    height: 34px;
+    margin-left: 10px
+}
